@@ -22,7 +22,7 @@ export const FooterBrand: React.FC = () => {
             className="w-full bg-[#3d3d42] text-gray-200 px-4 py-3 rounded pr-12 text-sm border border-transparent focus:border-gray-500 outline-none placeholder-gray-500 transition-colors"
           />
           <button
-            className="absolute right-1 top-1 bottom-1 w-10 bg-white text-black rounded flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="absolute right-0 top-0 bottom-0 w-12 bg-white text-black rounded flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="Subscribe"
           >
             <svg
