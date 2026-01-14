@@ -1,5 +1,3 @@
-import React from "react";
-
 export type SocialPlatform = "facebook" | "twitter" | "instagram" | "youtube";
 
 interface SocialIconProps {

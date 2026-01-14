@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
         {/* Logo only - text removed */}
         <div className="w-8 h-8 relative">
           <img
-            src="/assets/images/logo.svg"
+            src="/images/logo.svg"
             alt="Setapp Logo"
             className="w-full h-full"
           />
@@ -51,11 +51,7 @@ export const Navbar: React.FC = () => {
               className="flex items-center gap-2 text-sm font-medium transition-colors"
             >
               <img
-                src={
-                  currentLang === "en"
-                    ? "/assets/images/en.svg"
-                    : "/assets/images/ar.svg"
-                }
+                src={currentLang === "en" ? "/images/en.svg" : "/images/ar.svg"}
                 alt={currentLang}
                 className="w-5 h-auto rounded-sm"
               />
@@ -72,7 +68,7 @@ export const Navbar: React.FC = () => {
                   className="px-4 py-2 hover:bg-white/10 text-left text-sm flex items-center gap-2"
                 >
                   <img
-                    src="/assets/images/en.svg"
+                    src="/images/en.svg"
                     alt="English"
                     className="w-5 h-auto rounded-sm"
                   />{" "}

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface LinkItem {
   label: string;
   href: string;

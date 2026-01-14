@@ -7,8 +7,8 @@ interface Language {
 }
 
 const languages: Language[] = [
-  { code: "en", name: "English", flag: "assets/images/en.svg" },
-  { code: "ar", name: "Arabic", flag: "assets/images/ar.svg" },
+  { code: "en", name: "English", flag: "/images/en.svg" },
+  { code: "ar", name: "Arabic", flag: "/images/ar.svg" },
 ];
 
 export const LanguageSelector: React.FC = () => {

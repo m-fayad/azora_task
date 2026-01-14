@@ -1,10 +1,8 @@
-import React from "react";
-
 export const FooterBrand: React.FC = () => {
   return (
     <div className="space-y-12">
       <div className="flex items-center gap-3">
-        <img src="/assets/images/logo.svg" alt="logo" className="w-4" />
+        <img src="/images/logo.svg" alt="logo" className="w-4" />
         <span className="text-white font-bold text-xl tracking-wide">
           SETAPP
         </span>

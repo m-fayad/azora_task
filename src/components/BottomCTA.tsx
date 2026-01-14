@@ -1,5 +1,3 @@
-import React from "react";
-
 export const BottomCTA: React.FC = () => {
   return (
     <section className="py-24 px-6 split-gradient">
@@ -8,7 +6,7 @@ export const BottomCTA: React.FC = () => {
           {/* Content */}
           <div className="relative z-10">
             <img
-              src="/assets/images/logo.svg"
+              src="/images/logo.svg"
               alt="logo"
               className="h-20 md:h-32 mb-5"
             />

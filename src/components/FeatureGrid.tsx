@@ -1,4 +1,3 @@
-import React from "react";
 import { FeatureCard } from "./FeatureCard";
 
 export const FeatureGrid: React.FC = () => {
@@ -19,31 +18,31 @@ export const FeatureGrid: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Large Featured Card */}
         <FeatureCard
-          icon="/assets/images/mac-icon.png"
+          icon="/images/mac-icon.png"
           title="Keep your Mac clean"
           description="Remove junk, scan for malware, wipe email attachments"
           variant="pink"
           className="md:col-span-2 md:min-h-125"
-          imageSrc="/assets/images/clean-mac.png"
+          imageSrc="/images/clean-mac.png"
           textLayout="row"
         />
 
         {/* Smaller Cards */}
         <FeatureCard
-          icon="/assets/images/code-icon.png"
+          icon="/images/code-icon.png"
           title="Write code"
           description="Create applications in more than 25 languages"
           variant="cream"
-          imageSrc="/assets/images/code.png"
+          imageSrc="/images/code.png"
           imagePosition="top"
         />
 
         <FeatureCard
-          icon="/assets/images/meetings-icon.png"
+          icon="/images/meetings-icon.png"
           title="Join meetings in a click"
           description="Quickly access links to your meetings from menu bar"
           variant="blue"
-          imageSrc="/assets/images/meetings.png"
+          imageSrc="/images/meetings.png"
         />
       </div>
 

@@ -3,25 +3,25 @@ import { PaginationDots } from "./common/PaginationDots";
 
 const slides = [
   {
-    image: "assets/images/jason-staczek.png",
+    image: "/images/jason-staczek.png",
     text: "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.",
     author: "Jason Staczek",
     bgColor: "bg-[#765070]",
   },
   {
-    image: "assets/images/jason-staczek.png",
+    image: "/images/jason-staczek.png",
     text: "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.",
     author: "Jason Staczek",
     bgColor: "bg-[#765070]",
   },
   {
-    image: "assets/images/jason-staczek.png",
+    image: "/images/jason-staczek.png",
     text: "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.",
     author: "Jason Staczek",
     bgColor: "bg-[#765070]",
   },
   {
-    image: "assets/images/jason-staczek.png",
+    image: "/images/jason-staczek.png",
     text: "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.",
     author: "Jason Staczek",
     bgColor: "bg-[#765070]",
@@ -177,9 +177,9 @@ const ChevonLeft = () => (
     <path
       d="M11.5 21.5L1.5 11.5L11.5 1.5"
       stroke="white"
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -195,9 +195,9 @@ const ChevonRight = () => (
     <path
       d="M1.5 21.5L11.5 11.5L1.5 1.5"
       stroke="white"
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
