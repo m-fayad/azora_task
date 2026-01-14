@@ -89,18 +89,16 @@ export const TestimonialGrid: React.FC = () => {
   };
 
   return (
-    <section className="pt-36 pb-14 px-6 bg-white border-b border-border">
+    <section className="pt-18 md:pt-36 pb-14 px-6 bg-white border-b border-border">
       <div className="container max-w-7xl mx-auto md:px-10 lg:px-16">
         {/* Header Section */}
-        <div className="text-background flex justify-between items-center mb-12">
+        <div className="text-background flex flex-col md:flex-row justify-between md:items-center gap-4 mb-12">
           <h2 className="text-4xl font-bold tracking-tight">
             Setapp in your words.
           </h2>
-          <div className="flex items-center gap-12">
-            <p className="text-sm max-md:hidden text-[#26262B]">
-              What you say about how Setapp
-              <br />
-              powers you up.
+          <div className="flex flex-col md:flex-row md:items-center gap-12">
+            <p className="text-sm">
+              What you say about how Setapp powers you up.
             </p>
             <SocialIcons variant="testimonials" />
           </div>

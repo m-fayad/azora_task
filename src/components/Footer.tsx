@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           <LanguageSelector />
         </div>
 
-        <div className="border-t border-gray-700 mb-8"></div>
+        <div className="border-t border-border/20 mb-8"></div>
 
         <FooterBottom />
       </div>

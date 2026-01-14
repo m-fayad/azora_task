@@ -3,7 +3,9 @@ import { FeatureCard } from "./FeatureCard";
 
 export const FeatureGrid: React.FC = () => {
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6 border-y border-border my-24">
+    <section className="py-24 max-w-7xl mx-auto px-6">
+      <div className="border-t border-border/20 mb-24"></div>
+
       <div className="flex justify-between items-end mb-12">
         <h2 className="text-4xl font-bold text-white tracking-tight">
           What you get on Setapp.
@@ -21,7 +23,7 @@ export const FeatureGrid: React.FC = () => {
           title="Keep your Mac clean"
           description="Remove junk, scan for malware, wipe email attachments"
           variant="pink"
-          className="md:col-span-2 min-h-125"
+          className="md:col-span-2 md:min-h-125"
           imageSrc="/assets/images/clean-mac.png"
           textLayout="row"
         />
@@ -63,6 +65,7 @@ export const FeatureGrid: React.FC = () => {
           recommendations.
         </p>
       </div>
+      <div className="border-t border-border/20 mt-24"></div>
     </section>
   );
 };

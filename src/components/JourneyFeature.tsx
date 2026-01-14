@@ -69,9 +69,9 @@ export const JourneyFeature: React.FC = () => {
   const currentSlide = slides[currentIndex];
 
   return (
-    <section className="mx-auto px-6 md:px-11 split-gradient-reverse">
+    <section className="mx-auto px-6 md:px-11 pb-10 split-gradient-reverse">
       <div
-        className={`relative rounded-3xl min-h-125 lg:min-h-150 group ${currentSlide.bgColor} transition-colors duration-500`}
+        className={`relative rounded-3xl min-h-125 lg:min-h-150 overflow-hidden group ${currentSlide.bgColor} transition-colors duration-500`}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -95,7 +95,7 @@ export const JourneyFeature: React.FC = () => {
           key={currentIndex}
           src={currentSlide.image}
           alt={currentSlide.author}
-          className="opacity-10 lg:opacity-100 absolute end-8 bottom-0 h-[90%] group-hover:scale-105 transition-transform duration-700 ease-out animate-fade-in"
+          className="opacity-100 absolute md:end-8 bottom-0 md:h-[90%] group-hover:scale-105 transition-transform duration-700 ease-out animate-fade-in"
         />
 
         <div className="absolute left-6 lg:top-30 lg:left-18 z-20 flex flex-col justify-center py-4 md:py-6 lg:p-8 md:w-1/2">
@@ -155,14 +155,13 @@ export const JourneyFeature: React.FC = () => {
             <div className="w-0 h-0 border-t-8 border-t-transparent border-l-16 border-l-[#9D9CA2] border-b-8 border-b-transparent ml-1"></div>
           )}
         </div>
-
-        <PaginationDots
-          count={slides.length}
-          activeIndex={currentIndex}
-          onClick={setCurrentIndex}
-          className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
-        />
       </div>
+      <PaginationDots
+        count={slides.length}
+        activeIndex={currentIndex}
+        onClick={setCurrentIndex}
+        className="w-fit mx-auto mt-8"
+      />
     </section>
   );
 };

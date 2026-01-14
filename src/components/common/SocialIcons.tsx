@@ -1,17 +1,27 @@
-interface SocialIconsProps {
+import React from "react";
+
+export type SocialPlatform = "facebook" | "twitter" | "instagram" | "youtube";
+
+interface SocialIconProps {
+  platform: SocialPlatform;
   variant?: "footer" | "testimonials";
   className?: string;
+  href?: string;
 }
 
-export const SocialIcons: React.FC<SocialIconsProps> = ({
+export const SocialIcon: React.FC<SocialIconProps> = ({
+  platform,
   variant = "footer",
   className = "",
+  href = "#",
 }) => {
-  const icons = [
-    {
+  const icons: Record<
+    SocialPlatform,
+    { bgColor: string; textColor: string; icon: React.ReactNode; label: string }
+  > = {
+    facebook: {
       label: "Facebook",
-      href: "#",
-      bgColor: variant === "testimonials" ? "bg-blue-600" : "bg-gray-500",
+      bgColor: variant === "testimonials" ? "bg-[#3A5792]" : "bg-gray-500",
       textColor: variant === "testimonials" ? "text-white" : "text-background",
       icon: (
         <svg
@@ -25,10 +35,9 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({
         </svg>
       ),
     },
-    {
+    twitter: {
       label: "Twitter",
-      href: "#",
-      bgColor: variant === "testimonials" ? "bg-sky-400" : "bg-gray-500",
+      bgColor: variant === "testimonials" ? "bg-[#2691D5]" : "bg-gray-500",
       textColor: variant === "testimonials" ? "text-white" : "text-background",
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -36,10 +45,9 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({
         </svg>
       ),
     },
-    {
+    instagram: {
       label: "Instagram",
-      href: "#",
-      bgColor: variant === "testimonials" ? "bg-pink-500" : "bg-gray-500",
+      bgColor: variant === "testimonials" ? "bg-[#D41792]" : "bg-gray-500",
       textColor: variant === "testimonials" ? "text-white" : "text-background",
       icon: (
         <svg
@@ -58,10 +66,9 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({
         </svg>
       ),
     },
-    {
+    youtube: {
       label: "YouTube",
-      href: "#",
-      bgColor: variant === "testimonials" ? "bg-red-600" : "bg-gray-500",
+      bgColor: variant === "testimonials" ? "bg-[#EB0C19]" : "bg-gray-500",
       textColor: variant === "testimonials" ? "text-white" : "text-background",
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -69,19 +76,41 @@ export const SocialIcons: React.FC<SocialIconsProps> = ({
         </svg>
       ),
     },
+  };
+
+  const config = icons[platform];
+
+  return (
+    <a
+      href={href}
+      className={`${config.bgColor} p-2 rounded-full hover:opacity-80 transition-all ${config.textColor} inline-flex items-center justify-center ${className}`}
+      aria-label={config.label}
+    >
+      {config.icon}
+    </a>
+  );
+};
+
+interface SocialIconsProps {
+  variant?: "footer" | "testimonials";
+  className?: string;
+}
+
+export const SocialIcons: React.FC<SocialIconsProps> = ({
+  variant = "footer",
+  className = "",
+}) => {
+  const platforms: SocialPlatform[] = [
+    "facebook",
+    "twitter",
+    "instagram",
+    "youtube",
   ];
 
   return (
     <div className={`flex gap-2.5 ${className}`}>
-      {icons.map((item) => (
-        <a
-          key={item.label}
-          href={item.href}
-          className={`${item.bgColor} p-2 rounded-full hover:opacity-80 transition-all ${item.textColor}`}
-          aria-label={item.label}
-        >
-          {item.icon}
-        </a>
+      {platforms.map((platform) => (
+        <SocialIcon key={platform} platform={platform} variant={variant} />
       ))}
     </div>
   );

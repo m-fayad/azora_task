@@ -34,7 +34,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       <img
         src={imageSrc}
         alt={`${title} image`}
-        className="object-cover w-full h-full transform"
+        className="object-contain md:object-cover w-full h-full transform"
       />
     </div>
   );
@@ -67,7 +67,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
 
   return (
     <div
-      className={`rounded-3xl p-8 overflow-hidden relative flex flex-col justify-between h-150 transition-transform hover:scale-[1.01] duration-300 ${variantStyles[variant]} ${className}`}
+      className={`rounded-3xl p-4 md:p-8 overflow-hidden relative flex flex-col justify-between md:h-150 transition-transform hover:scale-[1.01] duration-300 ${variantStyles[variant]} ${className}`}
     >
       {imagePosition === "top" ? (
         <>

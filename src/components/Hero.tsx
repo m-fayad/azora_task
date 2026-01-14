@@ -2,7 +2,7 @@ import React from "react";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-20 pb-32 flex flex-col items-center justify-center min-h-[60vh] text-center px-4 overflow-hidden">
+    <section className="relative pt-20 md:pb-32 flex flex-col items-center justify-center min-h-[calc(100dvh-120px)] sm:min-h-[60vh] text-center px-4 overflow-hidden">
       {/* Logo/Icon above title */}
       <div className="mb-6 size-20 bg-black rounded-2xl flex items-center justify-center shadow-lg border border-white/10">
         <img

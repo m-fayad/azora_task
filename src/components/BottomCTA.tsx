@@ -10,20 +10,20 @@ export const BottomCTA: React.FC = () => {
             <img
               src="/assets/images/logo.svg"
               alt="logo"
-              className="h-32 mb-5"
+              className="h-20 md:h-32 mb-5"
             />
-            <h2 className="text-4xl md:text-5xl font-semibold text-background tracking-widest mb-4">
+            <h2 className="text-2xl md:text-5xl font-semibold text-background tracking-widest mb-4">
               Superpowers starting $9.99/month.
             </h2>
-            <h2 className="text-4xl md:text-5xl font-semibold text-background tracking-widest mb-16">
+            <h2 className="text-xl md:text-5xl font-semibold text-background tracking-widest mb-16">
               Free for 7 days.
             </h2>
 
             <div className="flex flex-col md:flex-row gap-4 items-center">
-              <button className="bg-background text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-800 transition-colors w-full md:w-auto">
+              <button className="bg-background text-white px-8 py-4 rounded-lg font-medium md:text-lg hover:bg-gray-800 transition-colors w-full md:w-auto">
                 Get started now
               </button>
-              <button className="bg-white border border-background text-background px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-50 transition-colors w-full md:w-auto">
+              <button className="bg-white border border-background text-background px-8 py-4 rounded-lg font-medium text-sm md:text-lg hover:bg-gray-50 transition-colors w-full md:w-auto">
                 More about Setapp
               </button>
             </div>
