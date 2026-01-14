@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PaginationDots } from "./common/PaginationDots";
 
 const slides = [
   {
@@ -155,19 +156,12 @@ export const JourneyFeature: React.FC = () => {
           )}
         </div>
 
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-5">
-          {slides.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${
-                index === currentIndex
-                  ? "bg-black"
-                  : "bg-[#D5D4D4] hover:bg-gray-400"
-              }`}
-            ></div>
-          ))}
-        </div>
+        <PaginationDots
+          count={slides.length}
+          activeIndex={currentIndex}
+          onClick={setCurrentIndex}
+          className="absolute -bottom-8 left-1/2 transform -translate-x-1/2"
+        />
       </div>
     </section>
   );
