@@ -3,7 +3,7 @@ import { FeatureCard } from "./FeatureCard";
 
 export const FeatureGrid: React.FC = () => {
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6 border-y border-border my-24">
+    <section className="py-24 max-w-7xl mx-auto px-6 border-y border-border mt-24 mb-80">
       <div className="flex justify-between items-end mb-12">
         <h2 className="text-4xl font-bold text-white tracking-tight">
           What you get on Setapp.

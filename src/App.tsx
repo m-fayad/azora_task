@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen selection:bg-pink-500 selection:text-white">
       <Navbar />
-      <main>
+      <main className="relative">
         <Hero />
         <FeatureGrid />
         <JourneyFeature />
