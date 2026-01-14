@@ -70,7 +70,7 @@ export const JourneyFeature: React.FC = () => {
   return (
     <section className="mx-auto px-6 md:px-11 split-gradient-reverse">
       <div
-        className={`relative rounded-3xl overflow-hidden min-h-125 lg:min-h-150 group ${currentSlide.bgColor} transition-colors duration-500`}
+        className={`relative rounded-3xl min-h-125 lg:min-h-150 group ${currentSlide.bgColor} transition-colors duration-500`}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -154,19 +154,20 @@ export const JourneyFeature: React.FC = () => {
             <div className="w-0 h-0 border-t-8 border-t-transparent border-l-16 border-l-[#9D9CA2] border-b-8 border-b-transparent ml-1"></div>
           )}
         </div>
-      </div>
-      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-5">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${
-              index === currentIndex
-                ? "bg-black"
-                : "bg-[#D5D4D4] hover:bg-gray-400"
-            }`}
-          ></div>
-        ))}
+
+        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-5">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${
+                index === currentIndex
+                  ? "bg-black"
+                  : "bg-[#D5D4D4] hover:bg-gray-400"
+              }`}
+            ></div>
+          ))}
+        </div>
       </div>
     </section>
   );

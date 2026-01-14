@@ -37,11 +37,11 @@ body {
 }
 
 .split-gradient {
-  @apply bg-linear-to-b from-[#fefefe] from-50% to-[#2b2d32] to-50%;
+  @apply bg-linear-to-b from-[#fefefe] from-50% to-[#26262b] to-50%;
 }
 
 .split-gradient-reverse {
-  @apply bg-linear-to-t from-[#fefefe] from-50% to-[#2b2d32] to-50%;
+  @apply bg-linear-to-t from-[#fefefe] from-50% to-[#26262b] to-50%;
 }
 
 .animate-fade-in {
