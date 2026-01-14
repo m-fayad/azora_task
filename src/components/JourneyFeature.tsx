@@ -68,7 +68,7 @@ export const JourneyFeature: React.FC = () => {
   const currentSlide = slides[currentIndex];
 
   return (
-    <section className="mx-auto px-6 md:px-11 absolute w-full -translate-y-60 -translate-x-1/2 left-1/2">
+    <section className="mx-auto px-6 md:px-11 split-gradient-reverse">
       <div
         className={`relative rounded-3xl overflow-hidden min-h-125 lg:min-h-150 group ${currentSlide.bgColor} transition-colors duration-500`}
         onTouchStart={onTouchStart}

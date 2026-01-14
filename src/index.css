@@ -36,6 +36,18 @@ body {
   min-height: 100vh;
 }
 
+.split-gradient {
+  @apply bg-linear-to-b from-[#fefefe] from-50% to-[#2b2d32] to-50%;
+}
+
+.split-gradient-reverse {
+  @apply bg-linear-to-t from-[#fefefe] from-50% to-[#2b2d32] to-50%;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -45,8 +57,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
 }
