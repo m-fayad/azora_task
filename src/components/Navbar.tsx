@@ -59,7 +59,6 @@ export const Navbar: React.FC = () => {
                 alt={currentLang}
                 className="w-5 h-auto rounded-sm"
               />
-              <span className="uppercase">{currentLang}</span>
             </button>
 
             {/* Simple Dropdown for Lang */}
