@@ -18,10 +18,10 @@ export const BottomCTA: React.FC = () => {
             </h2>
 
             <div className="flex flex-col md:flex-row gap-4 items-center">
-              <button className="bg-background text-white px-8 py-4 rounded-lg font-medium md:text-lg hover:bg-gray-800 transition-colors w-full md:w-auto">
+              <button className="bg-background text-white px-4 md:px-8 py-4 rounded-lg font-medium text-sm md:text-lg hover:bg-gray-800 transition-colors w-full md:w-auto">
                 Get started now
               </button>
-              <button className="bg-white border border-background text-background px-8 py-4 rounded-lg font-medium text-sm md:text-lg hover:bg-gray-50 transition-colors w-full md:w-auto">
+              <button className="bg-white border border-background text-background px-4 md:px-8 py-4 rounded-lg font-medium text-xs md:text-lg hover:bg-gray-50 transition-colors w-full md:w-auto">
                 More about Setapp
               </button>
             </div>

@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
       </h1>
 
       <div className="flex gap-3 mb-4 h-12">
-        <button className="bg-white text-background px-8 rounded-xl font-medium text-lg hover:bg-gray-100 transition-colors cursor-pointer">
+        <button className="bg-white text-background px-4 md:px-8 rounded-xl font-medium text-sm md:text-lg hover:bg-gray-100 transition-colors cursor-pointer">
           Try free for 7 days
         </button>
         <div className="flex gap-2">
